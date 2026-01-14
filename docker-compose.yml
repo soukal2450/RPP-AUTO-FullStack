@@ -1,31 +1,28 @@
 version: '3.8'
 
 services:
-  # PostgreSQL Database
   postgres:
     image: postgres:15-alpine
-    container_name: carfixai-db
+    container_name: rppauto-db
     restart: always
     environment:
-      POSTGRES_USER: carfixai
-      POSTGRES_PASSWORD: carfixai123
-      POSTGRES_DB: carfixai
+      POSTGRES_USER: rppauto
+      POSTGRES_PASSWORD: rppauto123
+      POSTGRES_DB: rppauto
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  # Backend API
   backend:
     build: ./backend
-    container_name: carfixai-backend
+    container_name: rppauto-backend
     restart: always
     ports:
       - "3000:3000"
     environment:
-      DATABASE_URL: postgresql://carfixai:carfixai123@postgres:5432/carfixai
+      DATABASE_URL: postgresql://rppauto:rppauto123@postgres:5432/rppauto
       JWT_SECRET: your-secret-key
-      STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY}
     depends_on:
       - postgres
     volumes:

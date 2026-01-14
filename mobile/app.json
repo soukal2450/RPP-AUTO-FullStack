@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "CarFix AI",
-    "slug": "carfixai-mobile",
+    "name": "RPP AUTO",
+    "slug": "rpp-auto-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,42 +11,22 @@
       "resizeMode": "contain",
       "backgroundColor": "#0A0E1A"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.carfixai.mobile"
+      "bundleIdentifier": "com.rppauto.mobile"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0A0E1A"
       },
-      "package": "com.carfixai.mobile",
-      "permissions": [
-        "CAMERA",
-        "ACCESS_FINE_LOCATION",
-        "ACCESS_COARSE_LOCATION",
-        "INTERNET"
-      ]
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "package": "com.rppauto.mobile",
+      "permissions": ["CAMERA", "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION", "INTERNET"]
     },
     "plugins": [
-      [
-        "expo-camera",
-        {
-          "cameraPermission": "Allow CarFix AI to access your camera to scan VIN numbers"
-        }
-      ],
-      [
-        "expo-location",
-        {
-          "locationAlwaysAndWhenInUsePermission": "Allow CarFix AI to use your location to find nearby mechanics"
-        }
-      ]
+      ["expo-camera", {"cameraPermission": "Allow RPP AUTO to access your camera to scan VIN numbers"}],
+      ["expo-location", {"locationAlwaysAndWhenInUsePermission": "Allow RPP AUTO to use your location"}]
     ]
   }
 }
