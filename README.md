@@ -1,31 +1,32 @@
 # RPP AUTO - Recession Proof Products
 
-## Automotive SaaS Platform
+Your Automotive SaaS Platform
 
-### 🚀 Automated Deployment
-This repository automatically deploys to http://recessionproofproducts.com on every push to main.
+## 🚀 Automated Deployment
 
-### 📱 Mobile-Friendly Workflow
-- Edit code from GitHub mobile app or Termux
-- Push to GitHub
-- Automatic deployment via GitHub Actions
-- No manual SSH required!
+This repository is configured with GitHub Actions for automatic deployment to IONOS hosting.
 
-### 🛠 Tech Stack
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Python (FastAPI)
-- **Database:** Supabase (PostgreSQL)
-- **Hosting:** IONOS Webspace
-- **CI/CD:** GitHub Actions
+### How It Works:
 
-### 📦 Deployment Status
-Check deployment status: [GitHub Actions](https://github.com/Owwmann/RPP-AUTO-FullStack/actions)
+1. **Push to main branch** - Triggers automatic deployment
+2. **GitHub Actions** - Runs the deployment workflow
+3. **SSH Deployment** - Deploys to recessionproofproducts.com
 
-### 🔗 Live Site
-[http://recessionproofproducts.com](http://recessionproofproducts.com)
+### Deploy from Mobile:
+
+You can now deploy from your mobile phone:
+
+1. Use **GitHub Mobile App** to edit files
+2. Commit and push changes
+3. GitHub Actions automatically deploys!
+
+### Links:
+
+- 🌐 **Live Site:** [http://recessionproofproducts.com](http://recessionproofproducts.com)
+- 📊 **GitHub Actions:** [View Workflows](https://github.com/Owwmann/RPP-AUTO-FullStack/actions)
 
 ---
 
 **Last Updated:** 2026-01-15
-**Deployed via:** GitHub Actions
-**Status:** ✅ Automated
+
+**Status:** ✅ Auto-deploy configured and active!
