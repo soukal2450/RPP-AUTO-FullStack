@@ -1,0 +1,44 @@
+---
+# IONOS Deploy Now Configuration
+# RPP Auto - Production Deployment
+# Target: recessionproofproducts.com
+
+distFolder: ./rpp-auto-backend
+
+setup:
+  - name: python
+    version: 3.9
+
+buildCommand: |
+  cd rpp-auto-backend
+  pip install --upgrade pip
+  pip install -r requirements.txt
+  echo "Build completed successfully"
+
+deployCommand: |
+  cd rpp-auto-backend
+  # Run database migrations
+  alembic upgrade head || echo "Migrations skipped (run manually if needed)"
+  # Start FastAPI with Uvicorn
+  uvicorn main:app --host 0.0.0.0 --port 8080 --workers 4
+
+runtime:
+  python: "3.9"
+
+env:
+  - key: ENVIRONMENT
+    value: production
+  - key: PORT
+    value: "8080"
+
+# Health check endpoint
+healthCheck:
+  path: /health
+  interval: 30
+  timeout: 10
+
+# Auto-scaling configuration
+scaling:
+  minInstances: 1
+  maxInstances: 5
+  targetCPU: 70
