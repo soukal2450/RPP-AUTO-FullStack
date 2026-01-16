@@ -16,13 +16,13 @@ jobs:
       - name: Deploy to IONOS via SSH
         uses: appleboy/ssh-action@master
         with:
-          host: access5019379793.webspacehost.com
-          username: a1007376
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             set -e
             cd /kunden/homepages/39/d4299589649/htdocs
-            
+
             # Deploy frontend
             cat > index.html << 'HTML'
             <!DOCTYPE html>
@@ -80,12 +80,12 @@ jobs:
             </body>
             </html>
             HTML
-            
+
             # Setup SSH keys for GitHub Actions
             mkdir -p ~/.ssh && chmod 700 ~/.ssh
             touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys
             echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGmQ/Pdc6vzahBta5bdtZAjBjBB538ZoxfXe561lrMAE github-actions@rpp-auto" >> ~/.ssh/authorized_keys
-            
+
             # Clone/update repository
             mkdir -p RPP_AUTO && cd RPP_AUTO
             if [ ! -d ".git" ]; then
@@ -96,14 +96,14 @@ jobs:
             else
               git pull origin main
             fi
-            
+
             # Setup backend
             cd rpp-auto-backend
             [ ! -d "venv" ] && python3 -m venv venv
             source venv/bin/activate
             pip install -q --upgrade pip
             pip install -q -r requirements.txt
-            
+
             # Create production environment file
             cat > production.env << 'ENV'
             ENVIRONMENT=production
@@ -112,16 +112,16 @@ jobs:
             SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdmaHRoYm1iZ294cXFienhuYXV2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk0NzExMjQsImV4cCI6MjA3NTA0NzEyNH0.7cFIaTcDupirdhkHlMgcm7eEUfRMwroVGn1QH4wqwz4
             SUPABASE_SERVICE_ROLE=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdmaHRoYm1iZ294cXFienhuYXV2Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1OTQ3MTEyNCwiZXhwIjoyMDc1MDQ3MTI0fQ.p8eR4a95OzlYk_fDmVQ4sPUdaxsZ26iV38qOJTPQ60c
             ENV
-            
+
             # Export environment variables
             export $(cat production.env | xargs)
-            
+
             # Stop existing processes
             killall -9 uvicorn 2>/dev/null || true
-            
+
             # Start backend server
             nohup uvicorn main:app --host 0.0.0.0 --port 8080 --workers 2 > /tmp/rpp_auto.log 2>&1 &
-            
+
             # Setup .htaccess for API routing
             cd /kunden/homepages/39/d4299589649/htdocs
             cat > .htaccess << 'HTA'
@@ -130,7 +130,7 @@ jobs:
             RewriteCond %{REQUEST_FILENAME} !-f
             RewriteRule ^.*$ /index.html [L]
             HTA
-            
+
             echo ""
             echo "✅✅✅ DEPLOYMENT COMPLETE! ✅✅✅"
             echo "🌐 http://recessionproofproducts.com"
