@@ -17,7 +17,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: access5019379793.webspacehost.com
-          username: u102176229
+          username: a1007376
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             set -e
