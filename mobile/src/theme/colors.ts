@@ -1,36 +1,38 @@
-// Industrial AI Dark Theme
+// Automotive Diagnostic Tech Theme - Black/Green/Yellow
 export const Colors = {
-  // Primary Brand
-  neonBlue: '#00D9FF',
-  neonCyan: '#00FFF0',
+  // Primary Diagnostic Colors
+  diagnosticGreen: '#00FF00',      // Bright green for active/success states
+  diagnosticGreenSoft: '#00E676',  // Softer green variant
+  warningYellow: '#FFD700',        // Warning/alert yellow
+  warningAmber: '#FFC107',         // Amber for caution
 
   // Backgrounds
-  darkBg: '#0A0E1A',
-  cardBg: '#1A1F2E',
-  inputBg: '#252B3D',
+  darkBg: '#000000',               // Pure black primary background
+  cardBg: '#121212',               // Dark gray for cards
+  inputBg: '#1E1E1E',              // Input fields background
 
   // Text
-  textPrimary: '#FFFFFF',
-  textSecondary: '#B0B8C8',
-  textMuted: '#6B7280',
+  textPrimary: '#FFFFFF',          // White primary text
+  textSecondary: '#B0B0B0',        // Light gray secondary text
+  textMuted: '#808080',            // Medium gray muted text
 
   // Status
-  success: '#10B981',
-  warning: '#F59E0B',
-  error: '#EF4444',
-  info: '#3B82F6',
+  success: '#00FF00',              // Green success
+  warning: '#FFD700',              // Yellow warning
+  error: '#EF4444',                // Red error
+  info: '#00E676',                 // Green info
 
-  // Accent
-  purple: '#8B5CF6',
-  orange: '#F97316',
+  // Accent (removed purple/orange, using gear gray)
+  gearGray: '#505050',             // Mechanical gray
+  darkGray: '#2A2A2A',             // Dark accent gray
 
   // Borders
-  borderDark: '#2A2F3F',
-  borderLight: '#3A4052',
+  borderDark: '#1E1E1E',
+  borderLight: '#2A2A2A',
 
   // Overlays
-  overlay: 'rgba(10, 14, 26, 0.8)',
-  glassEffect: 'rgba(26, 31, 46, 0.6)',
+  overlay: 'rgba(0, 0, 0, 0.8)',
+  glassEffect: 'rgba(18, 18, 18, 0.6)',
 };
 
 export const Spacing = {
@@ -69,10 +71,10 @@ export const BorderRadius = {
 };
 
 export const Shadows = {
-  neonGlow: {
-    shadowColor: Colors.neonBlue,
+  greenGlow: {
+    shadowColor: Colors.diagnosticGreen,
     shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.5,
+    shadowOpacity: 0.4,
     shadowRadius: 10,
     elevation: 8,
   },
