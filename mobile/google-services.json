@@ -1,38 +1,6 @@
 {
-  "_comment": "PLACEHOLDER: Download the actual google-services.json from Firebase Console",
-  "_instructions": [
-    "1. Go to https://console.firebase.google.com",
-    "2. Select your project: sixth-zoo-467906-i6",
-    "3. Project Settings > General",
-    "4. Under 'Your apps' > Android app",
-    "5. Click 'Download google-services.json'",
-    "6. Replace this file with the downloaded one"
-  ],
-  "project_info": {
-    "project_number": "YOUR_PROJECT_NUMBER",
-    "project_id": "sixth-zoo-467906-i6",
-    "storage_bucket": "sixth-zoo-467906-i6.appspot.com"
-  },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "REPLACE_WITH_YOUR_APP_ID",
-        "android_client_info": {
-          "package_name": "com.rppauto.mobile"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "REPLACE_WITH_YOUR_API_KEY"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    }
-  ],
-  "configuration_version": "1"
+  "_notice": "THIS FILE HAS BEEN REMOVED",
+  "_reason": "Using Supabase for backend instead of Firebase",
+  "_action": "This file is no longer needed and should be deleted from the repository",
+  "_date": "2026-01-18T05:38:53.678164"
 }
